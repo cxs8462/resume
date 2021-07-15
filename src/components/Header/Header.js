@@ -9,10 +9,15 @@ function Header({goLogin,userInfo,signOut}){
             <Menu.Item key="1" onClick={signOut}>退出登录</Menu.Item>
         </Menu>
     );
+    const goGitHub = ()=>{
+        window.open("https://github.com/cxs8462/resume");
+    }
 
     return(
         <div className='header'>
-            <div className="left"></div>
+            <div className="left">
+                <Button type="link" onClick={goGitHub}>To Github</Button>
+            </div>
             <div className="right">
                 {
                     userInfo
