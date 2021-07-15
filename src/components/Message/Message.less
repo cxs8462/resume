@@ -1,0 +1,24 @@
+@import url('../common/common');
+.Message{
+  .box();
+  display: flex;
+  flex-direction: column;
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right{
+      color: #3498db;
+    }
+  }
+  .fgx{
+    margin: 10px 0;
+  }
+  .Contents{
+    flex: 1;
+    min-height: 200px;
+    overflow: auto;
+    background-color:#F4F4F4;
+    padding: 5px;
+  }
+}

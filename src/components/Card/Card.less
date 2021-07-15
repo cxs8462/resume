@@ -1,0 +1,106 @@
+.CardBox{
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 1px #bdc3c7;
+  background: white;
+  border-radius: 5px;
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right{
+      color: #3498db;
+    }
+  }
+  .fgx{
+    margin: 10px 0;
+  }
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .enty{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    overflow: hidden;
+  }
+}
+.CardList{
+  height: 300px;
+  transition: 0.5s all ease;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .list{
+    flex:1;
+    max-height: 210px;
+    overflow-y: auto;
+  }
+  .listItemBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    span{
+      color: #bdc3c7;
+    }
+  }
+  .listItem{
+    margin: 0;
+    max-width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    cursor: pointer;
+    &:hover{
+      color: #3498db;
+      &:before{
+        content: '点击访问=>';
+      }
+    }
+  }
+}
+.CardTop{
+  transform: translateY(-100%);
+}
+.Card{
+  transition: 0.5s all ease;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .statis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+
+}
+.listEnter-enter-active,.listEnter-exit-active{
+  transition:all 0.5s ease-in-out;
+}
+.listEnter-enter{
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.listEnter-enter-active{
+  opacity: 1;
+  transform: translateY(0);
+}
+//.listEnter-exit{
+//  opacity: 1;
+//  transform: scale(1);
+//  max-height: 50px;
+//}
+//.listEnter-exit-active{
+//  opacity: 0;
+//  transform: scale(0);
+//  max-height: 0;
+//}
